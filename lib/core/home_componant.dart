@@ -6,7 +6,11 @@ class HomeComponant extends StatelessWidget {
   final List<Widget> coulmchildren;
   final String buttondata;
   final VoidCallback onpressed;
-  const HomeComponant({super.key, required this.coulmchildren,required this.buttondata, required this.onpressed});
+  const HomeComponant(
+      {super.key,
+      required this.coulmchildren,
+      required this.buttondata,
+      required this.onpressed});
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +25,13 @@ class HomeComponant extends StatelessWidget {
           Column(
             children: coulmchildren,
           ),
+          SizedBox(
+            height: 60,
+          ),
           Button(
-           onpressed: onpressed,
+            textbuttonColor: Colors.white,
+            buttonColor: Color(0xff1ED760),
+            onpressed: onpressed,
             buttonData: buttondata,
           ),
         ],

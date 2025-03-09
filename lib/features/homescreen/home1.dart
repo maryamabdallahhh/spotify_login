@@ -40,7 +40,23 @@ class _HomeScreenState extends State<HomeScreen> {
               Navigator.of(context).pushNamed('home2');
             },
             buttondata: "Get Started",
-            coulmchildren: [],
+            coulmchildren: [
+              Text(
+                'Enjoy Listening To Music',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 23,
+                    color: Colors.white),
+              ),
+              Text(
+                textAlign: TextAlign.center,
+                'Lorem ipsum dolor sit amet consectetur. Et eleifend quis augue aliquam ut morbi turpis massa augue.',
+                style: TextStyle(
+                    color: Color(0xff868686),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15),
+              )
+            ],
           ),
         ],
       )),
